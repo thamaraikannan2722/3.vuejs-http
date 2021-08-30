@@ -1,16 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
+<PostList />
+<CreatePost />
+<Parent />
+<TemplateRefs />
+<ClickCounter />
+<HoverCounter />
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import PostList from "../src/components/23.HTTP_GET_Request";
+import CreatePost from "../src/components/24.HTTP_POST_Request";
+import Parent from "../25.Component Lifecycle Hooks/Parent";
+import TemplateRefs from "../src/components/26.TemplateRefs";
+import ClickCounter from "../src/components/27.Reusability_with_Mixins";
+import HoverCounter from "../src/components/27.Reusability_with_Mixins1";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    PostList,
+    CreatePost,
+    Parent,
+    TemplateRefs,
+    ClickCounter,
+    HoverCounter,
+  },
 }
 </script>
 
